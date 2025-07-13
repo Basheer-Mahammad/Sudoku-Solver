@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Sudoku Solver - Quick Access</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.3);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .link-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .link-card h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .link-card p {
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+        .access-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .access-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .info {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .performance {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .perf-item {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            .link-grid { grid-template-columns: 1fr; }
+            .access-btn { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧩 Ultimate Sudoku Solver</h1>
+        <p class="subtitle">Advanced DSA Optimization Project - Quick Access Portal</p>
+        
+        <div class="info">
+            <h3>🚀 Performance Highlights</h3>
+            <div class="performance">
+                <div class="perf-item">
+                    <strong>4x4</strong><br>< 1ms
+                </div>
+                <div class="perf-item">
+                    <strong>9x9</strong><br>< 1ms
+                </div>
+                <div class="perf-item">
+                    <strong>16x16</strong><br>< 50ms
+                </div>
+                <div class="perf-item">
+                    <strong>25x25</strong><br>< 200ms
+                </div>
+            </div>
+        </div>
+
+        <div class="link-grid">
+            <div class="link-card" onclick="window.open('sudoku-web.html', '_blank')">
+                <h3>🌐 Web Version</h3>
+                <p>Instant access - works on any device</p>
+                <p><strong>Features:</strong> 9x9 Sudoku, Mobile-friendly UI</p>
+                <a href="sudoku-web.html" class="access-btn">🚀 Play Now</a>
+            </div>
+
+            <div class="link-card" onclick="window.open('https://replit.com/github/Basheer-Mahammad/Sudoku-Solver', '_blank')">
+                <h3>💻 Replit IDE</h3>
+                <p>Full Java environment in browser</p>
+                <p><strong>Features:</strong> All puzzle sizes, Mobile IDE</p>
+                <a href="https://replit.com/github/Basheer-Mahammad/Sudoku-Solver" class="access-btn">🔧 Open IDE</a>
+            </div>
+
+            <div class="link-card" onclick="window.open('https://gitpod.io/#https://github.com/Basheer-Mahammad/Sudoku-Solver', '_blank')">
+                <h3>⚡ GitPod</h3>
+                <p>VS Code in browser with full terminal</p>
+                <p><strong>Features:</strong> Complete development environment</p>
+                <a href="https://gitpod.io/#https://github.com/Basheer-Mahammad/Sudoku-Solver" class="access-btn">🛠️ Launch</a>
+            </div>
+
+            <div class="link-card" onclick="window.open('https://codesandbox.io/s/github/Basheer-Mahammad/Sudoku-Solver', '_blank')">
+                <h3>📦 CodeSandbox</h3>
+                <p>Quick preview and editing</p>
+                <p><strong>Features:</strong> Instant setup, Web-focused</p>
+                <a href="https://codesandbox.io/s/github/Basheer-Mahammad/Sudoku-Solver" class="access-btn">📝 Edit</a>
+            </div>
+
+            <div class="link-card" onclick="window.open('https://github.com/Basheer-Mahammad/Sudoku-Solver', '_blank')">
+                <h3>📂 GitHub Source</h3>
+                <p>View source code and download</p>
+                <p><strong>Features:</strong> Full repository, Documentation</p>
+                <a href="https://github.com/Basheer-Mahammad/Sudoku-Solver" class="access-btn">📋 View Code</a>
+            </div>
+
+            <div class="link-card" onclick="downloadProject()">
+                <h3>💾 Download ZIP</h3>
+                <p>Download for local installation</p>
+                <p><strong>Features:</strong> Run locally with Java</p>
+                <button class="access-btn" onclick="downloadProject()">⬇️ Download</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>📱 Mobile Instructions</h3>
+            <ul style="text-align: left;">
+                <li><strong>Instant Play:</strong> Click "Web Version" above</li>
+                <li><strong>Full Features:</strong> Use Replit or GitPod links</li>
+                <li><strong>Android:</strong> Install Termux for full Java environment</li>
+                <li><strong>iOS:</strong> Use web-based IDEs through Safari</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>🏆 Algorithm Features</h3>
+            <ul style="text-align: left;">
+                <li>Constraint Satisfaction Problem (CSP) solver</li>
+                <li>BitSet optimizations for O(1) constraint checking</li>
+                <li>Most Constrained Variable (MCV) heuristics</li>
+                <li>Naked and Hidden Singles detection</li>
+                <li>Domain propagation with arc consistency</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function downloadProject() {
+            window.open('https://github.com/Basheer-Mahammad/Sudoku-Solver/archive/refs/heads/main.zip', '_blank');
+        }
+    </script>
+</body>
+</html>
