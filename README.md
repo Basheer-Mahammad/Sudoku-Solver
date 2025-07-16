@@ -1,4 +1,4 @@
-# 🧩 Ultimate Sudoku Solver
+ # 🧩 Ultimate Sudoku Solver
 
 > **State-of-the-Art Multi-Size Sudoku Solver with Advanced DSA Optimizations**
 
@@ -117,7 +117,8 @@ javac *.java; java UltimateJavaSudokuSolver
 The project includes pre-made puzzles for testing:
 
 - **`sample_4x4.txt`** - Easy 4x4 puzzle
-- **`sample_9x9.txt`** - Classic 9x9 puzzle  
+- **`my_4x4.txt`** - Custom 4x4 puzzle for file input demo
+- **`sample_9x9.txt`** - Classic 9x9 puzzle
 - **`sample_16x16.txt`** - Advanced 16x16 puzzle
 - **`sample_25x25.txt`** - Ultimate 25x25 puzzle
 
@@ -127,10 +128,10 @@ Create your own puzzle files using this simple format:
 # Comments start with #
 # Use 0 for empty cells, 1-N for filled cells
 # Example 4x4 puzzle:
-1 0 0 0
-0 0 0 3
+1 0 0 4
 0 0 0 0
-0 4 0 0
+0 0 0 0
+2 0 0 3
 ```
 
 ## 📝 **Sample Output**
@@ -172,6 +173,7 @@ SudokoSolver/
 ├── FlexibleSudoku.java              # Multi-size backtracking solver
 ├── UltraFast25x25.java              # Specialized 25x25 solver
 ├── sample_4x4.txt                   # 4x4 test puzzle
+├── my_4x4.txt                       # Custom 4x4 test puzzle (file input demo)
 ├── sample_9x9.txt                   # Classic 9x9 test puzzle
 ├── sample_16x16.txt                 # Advanced 16x16 test puzzle
 ├── sample_25x25.txt                 # Ultimate 25x25 test puzzle
@@ -222,7 +224,7 @@ Our advanced CSP solver implements cutting-edge techniques:
 - **4x4 & 9x9**: Detailed borders with subgrid separation
 - **16x16**: Clean 4x4 subgrid formatting
 - **25x25**: Compact format with 5x5 subgrid borders
-- **Unicode Support**: Proper ASCII art for all terminal types
+- **Terminal/Console Only**: No web or GUI frontend; all output is in the terminal
 
 ## 🏆 **Achievements**
 
