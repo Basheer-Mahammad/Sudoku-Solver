@@ -1,0 +1,6 @@
+# 4x4 Sudoku Sample Puzzle
+# Use 0 for empty cells
+1 0 0 4
+0 0 0 0
+0 0 0 0
+2 0 0 3
